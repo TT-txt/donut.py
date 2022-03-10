@@ -1,5 +1,4 @@
 from math import cos, sin
-from sys import stdout
 
 def main():
     A, B = 0, 0
@@ -30,7 +29,8 @@ def main():
                 j+=0.07
             print("\x1b[2J")
             for k in range(0, 1761):
-                stdout.write(b[k]) if k % 80 else stdout.write(chr(10))
+                #print("{}".format(b[k] if k % 80 else char(10)), end="")
+                print(b[k], end="") if k % 80 else print(chr(10), end="")
             A+=0.04
             B+=0.02
     except KeyboardInterrupt:
