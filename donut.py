@@ -31,8 +31,8 @@ def main():
             for k in range(0, 1761):
                 #print("{}".format(b[k] if k % 80 else char(10)), end="")
                 print(b[k], end="") if k % 80 else print(chr(10), end="")
-            A+=0.04
-            B+=0.02
+            A+=0.07
+            B+=0.04
     except KeyboardInterrupt:
         quit()
 
